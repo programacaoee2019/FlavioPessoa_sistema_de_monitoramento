@@ -15,8 +15,8 @@ O esboço da interface é o seguinte:
 
 Para a utilização:
 
-1º - Rodar a VI.
-2º - Clicar em Capturar frame.
-3º - Utilizando as formas geométricas de seleção na tela "snap image" selecionar a imagem a ser monitorada.
-4º - Com a área selecionada, clicar em selecionar objeto, que poderá ser visto na tela "template".
-5º - Ao clicar em acompanhar, a identificação começará e de acordo com a posição X do objeto, a camera será rotacionada para centralizar o objeto no centro da tela.
+1º - Rodar a VI.  
+2º - Clicar em Capturar frame.  
+3º - Utilizando as formas geométricas de seleção na tela "snap image" selecionar a imagem a ser monitorada.  
+4º - Com a área selecionada, clicar em selecionar objeto, que poderá ser visto na tela "template".  
+5º - Ao clicar em acompanhar, a identificação começará e de acordo com a posição X do objeto, a camera será rotacionada para centralizar o objeto no centro da tela.  
