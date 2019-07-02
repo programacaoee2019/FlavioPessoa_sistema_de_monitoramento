@@ -1,37 +1,37 @@
-# DescriÁ„o: Programa em labview para controlar um sistema de monitoramento.
+# Descri√ß√£o: Programa em labview para controlar um sistema de monitoramento.
 
-# MotivaÁ„o:
+# Motiva√ß√£o:
 
-Suprir a necessidade de monitorar desde a atividade de f·bricas para controle de seguranÁa e garantia de bom funcionamento a outros in˙meros sistemas que possuam alvos n„o fixos que precisem de monitoramento.
+Suprir a necessidade de monitorar desde a atividade de f√°bricas para controle de seguran√ßa e garantia de bom funcionamento a outros in√∫meros sistemas que possuam alvos n√£o fixos que precisem de monitoramento.
 
-# FunÁ„o:
+# Fun√ß√£o:
 
-Labview ser· utilizado para controlar o NI myRIO. Uma webcam conectada ao myRIO atravÈs de um flash drive USB realizar· a captura da imagem, onde, ao detectar mudanÁa na posiÁ„o do objeto desejado, o myRIO acionar· o servo para rotacionar a webcam e continuar capturando a imagem do objeto.
+Labview ser√° utilizado para controlar o NI myRIO. Uma webcam conectada ao computador realizar√° a captura da imagem, onde, ao detectar mudan√ßa na posi√ß√£o do objeto desejado em rela√ß√£o ao centro da c√¢mera, o myRIO acionar√° os servos motores para rotacionar a webcam(em pan e tilt) e continuar capturando a imagem do objeto de maneira centralizada.
 
-# Interface e utilizaÁ„o:
+# Interface e utiliza√ß√£o:
 
-O esboÁo da interface È o seguinte:
-![](Imagens/prototipointerface.png)
+O esbo√ßo da interface √© o seguinte:
+![](Imagens/prototipointerface.png)  
 
-Para a utilizaÁ„o:
-
-1∫ - Conectar o servo motor de "pan" na parte A e o servo motor de "tilt" na parte B, de acordo com a ilustraÁ„o:
-![](Imagens/Demo_setup_for_servo.jpg)
-2∫ - Rodar as VIs servos.vi e Object Tracking V2.vi.  
-3∫ - Clicar em Capturar frame.  
-4∫ - Utilizando as formas geomÈtricas de seleÁ„o na tela "snap image" selecionar a imagem a ser monitorada.  
-5∫ - Com a ·rea selecionada, clicar em selecionar objeto, que poder· ser visto na tela "template".  
-6∫ - Ao clicar em acompanhar, a identificaÁ„o comeÁar· e de acordo com a posiÁ„o X do objeto, a camera ser· rotacionada para centralizar o objeto no centro da tela.  
+Para a utiliza√ß√£o:  
+Passos:  
+1¬∫ - Conectar o servo motor de "pan" na parte A e o servo motor de "tilt" na parte B, de acordo com a ilustra√ß√£o:
+![](Imagens/Demo_setup_for_servo.jpg)  
+2¬∫ - Rodar as VIs servos.vi e Object Tracking V2.vi.  
+3¬∫ - Clicar em Capturar frame.  
+4¬∫ - Utilizando as formas geom√©tricas de sele√ß√£o na tela "snap image" selecionar a imagem a ser monitorada.  
+5¬∫ - Com a √°rea selecionada, clicar em selecionar objeto, que poder√° ser visto na tela "template".  
+6¬∫ - Ao clicar em acompanhar, a identifica√ß√£o come√ßar√° e de acordo com a posi√ß√£o X do objeto, a camera ser√° rotacionada para centralizar o objeto no centro da tela.  
 
 Detalhes importantes:
 
-I) A "torre" utilizada para o suporte da c‚mera foi a seguinte:
-![](Imagens/torre.jpeg)
-II) Para melhor eficiÍncia de campo de vis„o, a torre deve ser posicionada com sua base(parte fixa) virada para cima.
-III)A detecÁ„o da imagem fica melhor se a proporÁ„o do padr„o que deve ser acompanhado se manter em escala(dist‚ncia fixa da c‚mera).
+I) A "torre" utilizada para o suporte da c√¢mera foi a seguinte:
+![](Imagens/torre.jpeg)  
+II) Para melhor efici√™ncia de campo de vis√£o, a torre deve ser posicionada com sua base(parte fixa) virada para cima(projetado para ser colocado em um canto superior de uma sala.  
+III) A detec√ß√£o da imagem fica melhor se a propor√ß√£o do padr√£o que deve ser acompanhado se manter em escala(dist√¢ncia fixa da c√¢mera) por causa das limita√ß√µes do algor√≠tmo de detec√ß√£o do objeto.  
 
-# Recursos de terceiros utilizados
+# Recursos externos utilizados
 
-A partir do algorÌtimo obtido no tÛpico do fÛrum do NI de identificaÁ„o de padrıes na imagem da c‚mera desenvolvido pelo usu·rio Brandon L. foi possÌvel captar os dados e a imagem para a operaÁ„o dos servos motores.
-link do tÛpico:
+A partir do algor√≠timo obtido no t√≥pico do f√≥rum do NI de identifica√ß√£o de padr√µes na imagem da c√¢mera desenvolvido pelo usu√°rio Brandon L. foi poss√≠vel captar os dados e a imagem para a opera√ß√£o dos servos motores.
+link do t√≥pico:
 https://forums.ni.com/t5/Example-Programs/Object-Tracking-using-LabVIEW-and-Vision-Development-Module/ta-p/3505034?profile.language=pt-br
